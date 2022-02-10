@@ -1,0 +1,118 @@
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+h1,h2,h3,h4{
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    line-height:1.25;
+    margin-bottom: 0.75rem;
+    font-family: "Roboto", sans-serif;
+}
+
+h3{
+    font-size:1.25rem;
+}
+
+
+@media screen and (min-width: 800px){
+    h3{
+        font-size: 1.75rem;
+    }
+    h1,h2,h3,h4{
+        line-height:1;
+    }
+}
+
+@media screen and (min-width:992px)
+{
+
+
+}
+
+nav {
+    background-color: rgb(223, 223, 255);
+    height: 3 rem;
+    display : grid;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgb(94, 91, 248);
+}
+.nav-center{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+.nav-center h4{
+    /* margin-bottom: 0; */
+    color: black
+}
+
+.nav-links{
+    display: flex;
+}
+
+
+nav a{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size:1rem;
+    color:rgb(16, 1, 29);
+    letter-spacing: 2px;
+    margin-right:1rem;
+}
+
+nav a:hover{
+    color:rgb(202, 9, 228);
+}
+
+main{
+    min-height: calc(100vh - 3rem);
+    display:grid;
+    place-items:center;
+}
+
+.container{
+    text-align:center;
+}
+
+.container h1{
+    background:black;
+    color: white;
+    padding:1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.color{
+    color:rgb(202, 9, 228);
+}
+
+.btn-hero{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+    letter-spacing: 2px;
+    display:inline-block;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    border: 2px solid black;
+    cursor:pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.btn-hero:hover{
+    color: white;
+    background:black;
+}
